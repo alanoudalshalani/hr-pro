@@ -87,18 +87,18 @@
 
 
 class Employee():
-    def init(self,name,age,salary,employment_years):
+    def __init__(self,name,age,salary,employment_years):
         self.name=name
         self.age=age
         self.salary=salary
         self.employment_years=employment_years
     def get_annual_salary(self):
         return self.salary12
-    def str(self):
+    def __str__(self):
         return f'Name: {self.name}, Age: {self.age}, Salary: {self.salary}, Working Years:{self.employment_years}'
 class Manager(Employee):
-    def init(self,name,age,salary,employment_years,bonus_percentage):
-        super().init(name,age,salary,employment_years)
+    def ___init__(self,name,age,salary,employment_years,bonus_percentage):
+        super().__init__(name,age,salary,employment_years)
         self.bonus_percentage=bonus_percentage
     def get_bonus(self):
         return self.bonus_percentageself.salary
